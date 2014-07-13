@@ -51,6 +51,11 @@ img{max-width: 100%;border:none;display:block;}
   height: 25px;
   line-height:25px;    
   text-align: left;
+<<<<<<< HEAD
+=======
+  font-style:normal；
+  font:;
+>>>>>>> 076074026f39fa2878538837ed756ff704d6fcd4
 }
 .cell-image{
 	width:25px;
