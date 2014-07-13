@@ -6,7 +6,7 @@ a{ color:#00a0e9; text-decoration:none; text-decoration:none; }
 
 .clear{ *zoom:1; }
 .clear:after{ clear:both; content:""; display:table; }
-img{max-width: 100%;border:none;display: block;}
+img{max-width: 100%;border:none;display:block;}
 
 
 .dot {
@@ -18,10 +18,7 @@ img{max-width: 100%;border:none;display: block;}
     background: #cbcbcb;  /*Firefox*/
    	margin-right:5px;
    	vertical-align: middle;
-   
 }
-
-
 
 
 .index_top_bg img{width: 100%;}
@@ -40,7 +37,7 @@ img{max-width: 100%;border:none;display: block;}
 .company_used ul li img{width: 70%;margin: 5px 15%;}
 .company_used ul li a p{width:100%;text-align: center;}
 .company_notice{padding-left:20px;}
-.company_notice .title{background: url(../images/msg.png) no-repeat left center;background-size:16px 15px;padding-left:22px;font-family:"微软雅黑";font-size:16px;}
+.company_notice .notice_title{background: url(../images/msg.png) no-repeat left center;background-size:16px 15px;padding-left:22px;font-family:"微软雅黑";font-size:16px;text-align: left;}
 .company_notice ul{}
 .company_notice ul li{font-size:14px; color:#666;text-align: left;padding-left:12px;padding-top:2px;padding:bottom:2px;height:30px;line-height: 30px;}
 .notice_count{border-radius:78.5px 78.5px 78.5px 78.5px;padding:5px;display: inline-block;background: red;color:#fff;margin-left:3px;font-size:12px;position: absolute;line-height:10px;widht:20px;font-weight:bold;}
@@ -49,3 +46,13 @@ img{max-width: 100%;border:none;display: block;}
 .shenei_notice{background: url(../images/notice_s.png) no-repeat left center;background-size:20px 20px;width:25px;height: 26px;display: block;}
 .shenei_message{background: url(../images/message_s.png) no-repeat left center;background-size:20px 20px;width:25px;height: 26px;display: block;}
 .notice_next{background: url(../images/next.png) no-repeat right center;background-size:6px 11px;right:15px;}
+
+.cell-name {    
+  height: 25px;
+  line-height:25px;    
+  text-align: left;
+}
+.cell-image{
+	width:25px;
+	max-width: 25px;
+}
