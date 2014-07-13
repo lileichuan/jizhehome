@@ -6,92 +6,82 @@
 
         <!-- Sets initial viewport load and disables zooming  -->
         <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, minimal-ui">
-
-        <!-- Makes your prototype chrome-less once bookmarked to your phone's home screen -->
         <meta name="apple-mobile-web-app-capable" content="yes">
-        <meta name="apple-mobile-web-app-status-bar-style" content="black">
-
-        <!-- Include the compiled Ratchet CSS -->
-        <link href="../css/ratchet.css" rel="stylesheet">
-
-        <!-- Optionally, include either the iOS or Android theme -->
-        <link href="../css/ratchet-theme-android.css" rel="stylesheet">
+        <meta name="apple-mobile-web-app-status-bar-style" content="white">
+        <link rel="stylesheet" href="../css/ratchet.min.css">
+        <link rel="stylesheet" href="../css/ratchet-theme-ios.min.css">
+         <link rel="stylesheet" href="../css/app.css">
+        <script src="../js/ratchet.min.js"></script>
         <link href="../css/jizhehome_android.css" rel="stylesheet">
-
-
-        <link rel="stylesheet" href="http://code.jquery.com/mobile/1.3.2/jquery.mobile-1.3.2.min.css">
-		<script src="http://code.jquery.com/jquery-1.8.3.min.js"></script>
-		<script src="http://code.jquery.com/mobile/1.3.2/jquery.mobile-1.3.2.min.js"></script>
-
-        <!-- Include the compiled Ratchet JS -->
-        <script src="../js/ratchet.js"></script>
-        <script src="../js/zepto.js"></script>
-        <script src="../js/jizhehome_android.js"></script>
     </head>
     <body>
-<div data-role="page" id="page_main">
-	<div class="content">
-		<div class="index_top_bg"><img src="../images/top_bg.png" /></div>
-		<div class="index_head"><img class="head" src="../images/head.png" /><div class="index_name">淡水鱼</div></div>
-		<div class="company_info">
-			<ul>
-				<li style="width:70%;"><span>中国石化报社</span><br /><div class="num">单位人数：198</div></li>
-<!-- 				<li style="width:30%;padding-right:10px;"><div class="content-padded"><a style="padding:8px 8px;background-color:#6cb71e;font-size:14px;box-shadow:none;" class="btn btn-primary btn-block">订阅</a></div></li> -->
-			</ul>
-		</div>
-		<div class="company_used">
-			<ul>
-				<li class="container"><a href="#page_notification" data-transition="slide"><img src="../images/notice.png" /><p>通知</p></a></li>
-				<li class="container"><a href=""><img src="../images/member.png" /><p>通讯录</p></a></li>
-				<li class="container"><a href=""><img src="../images/exam.png" /><p>记者证考试</p></a></li>
-			</ul></div>
-		<div class="company_notice">
-			<div class="title">最新消息</div>
-			<ul>
-				<li><span class="dot"></span><a href="">徐斌主任于2014年8月21日到公司报道</a></li>
-				<li><span class="dot"></span><a href="">徐斌主任于2014年8月21日到公司报道</a></li>
-				<li><span class="dot"></span><a href="">徐斌主任于2014年8月21日到公司报道</a></li>
-			</ul></div>
+        <div data-role="page" id="page_main">
+           <div class="content">
+    <div class="index_top_bg"><img src="../images/top_bg.png" /></div>
+    <div class="index_head"><img class="head" src="../images/head.png" /><div class="index_name">淡水鱼</div></div>
+    <div class="company_info">
+      <ul>
+        <li style="width:70%;"><span>中国石化报社</span><br /><div class="num">单位人数：198</div></li>
+      </ul>
     </div>
-  </div>
-
-
- <div data-role="page" id="page_notification">
-	<header class="bar bar-nav" style="background-color:#F8F8F8;">
-      <a class="icon pull-left back" href="#page_main" data-transition="slide" data-direction="reverse"></a>
-      <a class="icon icon-refresh pull-right"></a>
-      <h1 class="title">首页</h1></header>
-	<div class="content" style="background-color:#efeff4;">
-		<ul class="table-view" style="background-color:#efeff4;">
-        <li class="table-view-cell media" style="background-color:#fff;border-bottom:none ;">
-          <a class="notice_next" href="inbox.html" data-transition="slide-in">
-            <span class="media-object icon  pull-left shenei_news" style="margin-left:15px;"></span>
-            <div class="media-body" style="text-align: left;">
-              	社内新闻<span class="notice_count">2</span>
+    <div class="company_used">
+      <ul>
+        <li class="container"><a href="#page_notice" data-transition="slide"><img src="../images/notice.png" /><p>通知</p></a></li>
+        <li class="container"><a href="#page_contacts" data-transition="slide"><img src="../images/member.png" /><p>通讯录</p></a></li>
+        <li class="container"><a href=""><img src="../images/exam.png" /><p>记者证考试</p></a></li>
+      </ul>
+    </div>
+    <div class="company_notice">
+      <div class="notice_title">最新消息</div>
+      <div>
+        <ul>
+        <li><span class="dot"></span><a href="">徐斌主任于2014年8月21日到公司报道</a></li>
+        <li><span class="dot"></span><a href="">徐斌主任于2014年8月21日到公司报道</a></li>
+        <li><span class="dot"></span><a href="">徐斌主任于2014年8月21日到公司报道</a></li>
+        </ul>
+      </div>
+    </div>
+          </div>
+       </div>
+        <div data-role="page" id="page_notice">
+            <header class="bar bar-nav">
+                <a class="icon icon-left-nav pull-left" href="#page_main" data-transition="slide" data-direction="reverse">首页</a>
+              <h1 class="title">通知</h1>
+            </header>
+            <div class="content">
+      <ul class="table-view">
+        <li class="table-view-cell media">
+          <a class="navigate-right" href="inbox.html" data-transition="slide-in">
+          <img class="media-object pull-left " src="../images/icon-news.png">
+              <div class="media-body cell-name">
+              社内新闻
+            </div>
+            <span class="badge">2</span>
+            <!-- <div class="media-body">社内新闻</div> -->
+          </a>
+        </li>
+        <li class="table-view-cell media">
+          <a class="navigate-right" href="inbox.html" data-transition="slide-in">
+           <img class="media-object pull-left cell-image" src="../images/icon-notice.png">
+           <span class="badge">2</span>
+            <div class="media-body cell-name">社内通知</div>
+          </a>
+      </ul>
+      <ul class="table-view">
+        <li class="table-view-cell media">
+          <a class="navigate-right" href="inbox.html" data-transition="slide-in">
+            <img class="media-object pull-left cell-image" src="../images/icon-report.png">
+            <span class="badge">0</span>
+            <div class="media-body cell-name">
+              报道安排
             </div>
           </a>
         </li>
-        <li style="background: #fff;"><hr style="margin:0;padding: 0;height:0;border:none;border-bottom:1px solid #ddd;margin-left:15px;background: #fff;" /></li>
-        <li class="table-view-cell media" style="background-color:#fff;margin-bottom:10px;">
-          <a class="notice_next" href="inbox.html" data-transition="slide-in">
-            <span class="media-object icon pull-left shenei_notice" style="margin-left:15px;"></span>
-            <div class="media-body" style="text-align: left;">
-              	社内通知
+      </ul>
             </div>
-          </a>
-        </li>
-        <li class="table-view-cell media" style="background-color:#fff;">
-          <a class="notice_next" href="inbox.html" data-transition="slide-in">
-            <span class="media-object icon pull-left shenei_message" style="margin-left:15px;"></span>
-            <div class="media-body" style="text-align: left;">
-              	报道安排
-            </div>
-          </a>
-        </li>
-       
-      </ul></div>
-  <h1>页脚文本</h1>
-  </div>
-</div>  
-</body>
+        </div>  
+        <div data-role="page" id="page_contacts">
+          12345
+        </div>
+    </body>
 </html>
